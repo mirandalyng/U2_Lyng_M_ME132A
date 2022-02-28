@@ -39,7 +39,7 @@ let databaseOfArtist= [
         name: "Kate Bush",
         genre: "Pop Rock",
         age: 63, 
-        Country:"England",
+        country:"England",
     },
     
     {

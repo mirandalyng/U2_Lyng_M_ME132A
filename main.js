@@ -9,7 +9,7 @@ function createNewArtist(name, genre, age, country){
         name: name, 
         genre: genre,
         age: age,
-        country: country
+        country: country,
 
     }
 
@@ -41,7 +41,7 @@ function removeArtistById(artists, id){
 }
 
 
-//Two functions to get artists by using genre and country. This will be used in the
+//Two functions to get artists by using genre and country. Theese will be used in the
 // filtering process later on in the code. 
 
 function getArtistByGenre(artists, genre){
@@ -61,17 +61,64 @@ function getArtistByGenre(artists, genre){
 
 function getArtistByCountry(artists, country){
     
-    let artistByCountry = [];
+   let artistByCountry = [];
 
-    for(let artist of artists){
-        if(artist.country.toLowerCase() == country.toLowerCase()){ 
-        artistByCountry.push(artist);
+        for(let artist of artists){
+            if(artist.country.toLowerCase() == country.toLowerCase()){
+            artistByCountry.push(artist);
         }
+
     }
 
-    return artistByCountry;
+        return artistByCountry;
 }
 
 
 
+//Function to make a new div in HTML for the artist created by createNewArtist - function. 
+function makeArtist(artist){
+    let div
+}
 
+
+//Funciton to make the array of artists into HTML
+function makeArtists(artists){}
+
+
+//Button functions 
+
+//Function for createNewArtist
+function clickAddNewArtist(){}
+
+//Function for clicking the remove-buttons 
+function clickRemoveArtist(){}
+
+
+//function for the filter buttons
+function clickShowAllAndFilter(){}
+
+
+
+
+
+//Functions that are going to work together with the buttonClicks
+
+//The submitting of all the information about the new created artist. Going to work with clickNewArtist()
+function submitArtistInfo(){}
+
+
+//Function for on the show all button that is going to run in the clickShowAllAndFilter
+function onShowAll(){}
+
+
+//On the filter based on genre that is going to run in the clickShowAllAndFilter
+
+function onFilterByGenre(){}
+
+
+//On the filter based on country that is going to run in the clickShowAllAndFilter
+function onFilterByCountry(){}
+
+
+
+//The direct code that is called all the time 
