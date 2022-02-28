@@ -1,4 +1,4 @@
-// Our database of artist
+//Database of artist
 "use strict";
 
 let databaseOfArtist= [

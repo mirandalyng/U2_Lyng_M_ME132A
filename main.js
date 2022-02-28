@@ -77,20 +77,41 @@ function getArtistByCountry(artists, country){
 
 //Function to make a new div in HTML for the artist created by createNewArtist - function. 
 function makeArtist(artist){
-    let div
+    let div = document.createElement("div");
+    div.classList.add("artist");
+    div.id = artist.id;
+    div.innerHTML = `
+    <div>${artist.name}</div>
+    <div>${artist.genre}</div>
+    <div>${artist.age}</div>
+    <div>${artist.country}</div>
+    <button type = "button">Remove</div>
+    `;
+
+    return div;
 }
 
 
 //Funciton to make the array of artists into HTML
-function makeArtists(artists){}
+function makeArtists(artists){
+    let artistsId = document.getElementById("artists");
+    artistsId.innerHTML = "";
+    
+    for(let artist of artists){
+        let artistId = makeArtist(artist);
+        artistsId.appendChild(artistId);
+    }
+
+    clickRemoveArtist();
+}
 
 
 //Button functions 
 
-//Function for createNewArtist
+//Function for createNewArtist here the alert is also going to be 
 function clickAddNewArtist(){}
 
-//Function for clicking the remove-buttons 
+//Function for clicking the remove-buttons here the confirm function will also be added 
 function clickRemoveArtist(){}
 
 
