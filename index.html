@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Database of Artists</title>
+    <title>Database of artists</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>The database of artists</h1>
+    <h1>Database of artists</h1>
 
+    <form id="create-new-artist">
+        <input id ="name"type="text" placeholder="Name">
+        <input id ="genre"type="text" placeholder="Genre">
+        <input id ="age"type="number" placeholder="Age">
+        <input id ="country"type="text" placeholder="Country">
+    </form>
+
+    <div id ="all-filters">
+        <form id="filter-by-genre"> 
+        <input id= "filter-genre" type = "text" placeholder = "Filter by genre">
+            <button>Filter</button>
+        </form>
+
+        <form id="filter-by-country">
+            <input id="filter-country" type = "text" placeholder="Filter by country">
+            <button>Filter</button>
+        </form>
+
+        <button id="show-all" type="button">Show all</button>
+
+    </div>
 
     <div id="artists"></div>
 
-    
+
     <script src="database.js"></script>
     <script src="main.js"></script>
 </body>
