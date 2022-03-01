@@ -1,8 +1,9 @@
 body{
     margin: 0 auto; 
-    background-color: ;
+    background-image: url(./image.jpg);
+    background-size: cover;
     max-width: 900px;
-    
+    font-family: 'Oswald';
     
     
     
@@ -11,6 +12,7 @@ body{
 h1{
     text-align: center;
     font-size: 40px;
+    color: rgb(54, 85, 68,0.85);
 }
 
 
@@ -24,6 +26,9 @@ h1{
 
 input{
     height: 30px;
+    background-color: rgb(248, 248, 255, 0.8);
+    border: solid 1px rgb(54, 85, 68,0.85);
+    color: black;
 }
 
 #all-filters{
@@ -45,17 +50,32 @@ input{
 
 
 #titles {
-   
-    padding: 10px 20px;
-    background:yellow;
+    color: ghostwhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(54, 85, 68,0.85);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    text-align:center;
     
   }
 
 
-  .artist{
+ ol{
+     padding: 0px;
+ }
+
+.artist{
       padding:10px 20px ;
       display: grid;
-      grid-template-columns: repeat(5,1fr);
+      grid-template-columns: repeat(6,1fr);
+      border-bottom: solid 1px #365544;
+      background-color: rgb(248, 248, 255,0.7);
+      color: #365544;
   }
+
+  button{
+      background-image: url(./image.jpg);
+      color: ghostwhite;
+  }
+

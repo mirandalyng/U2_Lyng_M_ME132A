@@ -85,10 +85,10 @@ function makeArtist(artist){
     div.classList.add("artist");
     div.id = artist.id;
 
-    
+
 
     div.innerHTML = `
-    <div>${artist.name}</div>
+    <li>${artist.name}</li>
     <div>${artist.genre}</div>
     <div>${artist.age}</div>
     <div>${artist.country}</div>
@@ -186,8 +186,8 @@ function onFilterByCountry(event){
 
 //Function for on the show all button that is going to run in the clickShowAllAndFilter
 function onShowAll(){
-    document.getElementById("filter-by-genre").value = "";
-    document.getElementById("filter-by-country").value = "";
+    document.getElementById("filter-genre").value = "";
+    document.getElementById("filter-country").value = "";
     makeArtists(databaseOfArtist);
 }
 
