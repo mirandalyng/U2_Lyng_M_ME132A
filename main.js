@@ -141,8 +141,11 @@ function submitArtistInfo(event){
     }
 
     else if(country == ""){
+       
         return alert("Fill in all the information please.");
+        
     }
+   
 
     let artist = createNewArtist(name, genre, age, country);
 
@@ -213,7 +216,7 @@ function clickAddNewArtist(){
     
 }
 
-//Function for clicking the remove-buttons here the confirm function will also be added 
+//Function for clicking the remove-buttons 
 function clickRemoveArtist(){
     let buttons = document.querySelectorAll(".artist button");
     
