@@ -35,7 +35,7 @@ function removeArtistById(artists, id){
         if(artist.id == id){
             artists.splice(i,1);
 
-            return confirm("Are you sure you want to delete this artist?");
+            return; 
 
         }
 
@@ -88,7 +88,6 @@ function makeArtist(artist){
     
 
     div.innerHTML = `
-    <div>${artist.id}</div>
     <div>${artist.name}</div>
     <div>${artist.genre}</div>
     <div>${artist.age}</div>
@@ -187,8 +186,8 @@ function onFilterByCountry(event){
 
 //Function for on the show all button that is going to run in the clickShowAllAndFilter
 function onShowAll(){
-    document.getElementById("filter-genre").value = "";
-    document.getElementById("filter-country").value = "";
+    document.getElementById("filter-by-genre").value = "";
+    document.getElementById("filter-by-country").value = "";
     makeArtists(databaseOfArtist);
 }
 
@@ -199,7 +198,9 @@ function onRemoveButtons(event){
     let button = event.target;
     let id = button.parentElement.id;
 
-    removeArtistById(databaseOfArtist, id);
+    if(confirm("Are you sure you want to delete this artist?")== true){
+        removeArtistById(databaseOfArtist,id)
+    } else return false;
 
     makeArtists(databaseOfArtist);
 

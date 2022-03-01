@@ -1,0 +1,61 @@
+body{
+    margin: 0 auto; 
+    background-color: ;
+    max-width: 900px;
+    
+    
+    
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#create-new-artist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 80px;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+}
+
+input{
+    height: 30px;
+}
+
+#all-filters{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 50px;
+    gap: 25px;
+
+    
+}
+
+#filter-by-genre,
+#filter-by-country {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 10px;
+}
+
+
+
+#titles {
+   
+    padding: 10px 20px;
+    background:yellow;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+  }
+
+
+  .artist{
+      padding:10px 20px ;
+      display: grid;
+      grid-template-columns: repeat(5,1fr);
+  }
