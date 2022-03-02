@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Database of artists</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
-
-</head>
-<body>
-
-
-    <h1>Database of artists</h1>
-
-
-
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>DATABASE OF ARTISTS</h1>
 
     <form id="create-new-artist">
-        <input id ="name"type="text" placeholder="Name">
-        <input id ="genre"type="text" placeholder="Genre">
-        <input id ="age" type="number" placeholder="Age">
-        <input id ="country"type="text" placeholder="Country">
-        <button>Add</button>
+      <input id="name" type="text" placeholder="Name" />
+      <input id="genre" type="text" placeholder="Genre" />
+      <input id="age" type="number" placeholder="Age" />
+      <input id="country" type="text" placeholder="Country" />
+      <button>Add</button>
     </form>
 
+    <div id="all-filters">
+      <form id="filter-by-genre">
+        <input id="filter-genre" type="text" placeholder="Filter by genre" />
+        <button>Filter</button>
+      </form>
 
+      <form id="filter-by-country">
+        <input
+          id="filter-country"
+          type="text"
+          placeholder="Filter by country"
+        />
+        <button>Filter</button>
+      </form>
 
-    <div id ="all-filters">
-        <form id="filter-by-genre"> 
-        <input id= "filter-genre" type = "text" placeholder = "Filter by genre">
-            <button>Filter</button>
-        </form>
-
-        <form id="filter-by-country">
-            <input id="filter-country" type = "text" placeholder="Filter by country">
-            <button>Filter</button>
-        </form>
-
-        <button id="show-all" type="button">Reset filters</button>
-
+      <button id="reset-all" type="button">Reset filters</button>
     </div>
 
     <div id="titles">
-        
-        <div>Name</div>
-        <div>Genre</div>
-        <div>Age</div>
-        <div>Country</div>
-        <div>Remove</div>
-        
+      <div>NAME</div>
+      <div>GENRE</div>
+      <div>AGE</div>
+      <div>COUNTRY</div>
+      <div>REMOVE</div>
     </div>
 
-    
-    
-    <ol type= "1" id="artists"></ol>
-
-    
-
+    <ol type="1" id="artists"></ol>
 
     <script src="database.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
