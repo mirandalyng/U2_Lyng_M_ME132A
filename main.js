@@ -1,5 +1,8 @@
 "use strict";
 
+//Repository-link
+// https://github.com/mirandalyng/U2_Lyng_M_ME132A
+
 //Function to create a new artist.
 
 function createNewArtist(name, genre, age, country) {
